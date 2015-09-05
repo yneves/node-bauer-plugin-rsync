@@ -16,7 +16,7 @@ crawler.loadPlugin(__dirname + "/../../");
 
 crawler.start(function() {
   
-  return this.promise();
+  return this.Promise.bind(this);
 });
 
 // - -------------------------------------------------------------------- - //
